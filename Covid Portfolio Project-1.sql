@@ -6,7 +6,6 @@ SELECT location, date, total_cases, new_cases, total_deaths, population
 FROM coviddeaths
 ORDER BY 1,2
 
-
 -- Looking at Total Cases vs Total Deaths
 -- Shows likelihood of dying if you contract covid in Australia
 SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
